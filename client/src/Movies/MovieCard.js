@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const MovieCard = ({ movie }) => {
-  // why is { movie } needed instead of 'props'?
   const { title, director, metascore, stars } = movie;
   return (
     <Link to={`/movies/${movie.id}`}>
